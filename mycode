@@ -1,0 +1,15 @@
+This email is basically asking you to run two DataStage (or ETL) jobs in sequence.
+
+🔧 What you’re being asked to do:
+
+First job to run:
+
+HMDS_D_CLI_BOOK360_ADHOC_INS_SQP_CLEAN_STG_CM
+This is likely a cleanup job
+It probably clears or prepares the staging (STG) tables before new data is processed
+
+Second job to run (after first completes successfully):
+
+HMDS_D_CLI_BOOK360_ADHOC_INS_SQP_EXP_CM
+This is likely an export/load job
+It probably moves processed data to the next layer (target tables or downstream systems)
